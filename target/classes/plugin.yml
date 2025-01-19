@@ -1,9 +1,0 @@
-name: Basics
-version: '1.0'
-main: me.shini9000.basics.Basics
-api-version: '1.21'
-prefix: [ Basics ]
-load: STARTUP
-authors: [ Shini9000 ]
-description: Basic plugin for servers and mandatory needs
-website: https://github.com/Shini9000
