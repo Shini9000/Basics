@@ -1,5 +1,5 @@
 name: Basics
-version: '1.0'
+version: '1.0.1'
 main: me.shini9000.basics.Basics
 api-version: '1.21'
 prefix: [ Basics ]
