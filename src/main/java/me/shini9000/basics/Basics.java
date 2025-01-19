@@ -11,7 +11,7 @@ public final class Basics extends JavaPlugin {
     public void onEnable() {
         getLogger().info("Basics enabling!");
 
-
+        getLogger().info("Basics enabled!");
     }
 
     @Override

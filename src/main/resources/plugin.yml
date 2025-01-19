@@ -7,3 +7,23 @@ load: STARTUP
 authors: [ Shini9000 ]
 description: Basic plugin for servers and mandatory needs
 website: https://github.com/Shini9000
+
+commands:
+  fly:
+    usage: /fly <target>
+    permission: basics.command.fly
+    description: Toggles flight for self or target
+    aliases:
+      - flight
+      - tf
+    permission-message: '&cYou lack the permissions to use this command'
+  heal:
+    usage: /heal <target>
+    permission: basics.command.heal
+    description: Heals self or target
+    permission-message: '&cYou lack the permissions to use this command'
+  feed:
+    usage: /feed <target>
+    permission: basics.command.feed
+    description: Feeds self or target
+    permission-message: '&cYou lack the permissions to use this command'
