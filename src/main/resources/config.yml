@@ -1,0 +1,7 @@
+debug:
+  test:
+    error: "debug test error message"
+
+Commands:
+  Heal:
+    HealSelf_Full: "Full health already"

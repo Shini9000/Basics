@@ -1,5 +1,5 @@
 name: Basics
-version: '1.0.1'
+version: '1.0.2'
 main: me.shini9000.basics.Basics
 api-version: '1.21'
 prefix: [ Basics ]
@@ -10,7 +10,7 @@ website: https://github.com/Shini9000
 
 commands:
   fly:
-    usage: /fly <target>
+    usage: "/fly <target>"
     permission: basics.command.fly
     description: Toggles flight for self or target
     aliases:
@@ -18,12 +18,12 @@ commands:
       - tf
     permission-message: '&cYou lack the permissions to use this command'
   heal:
-    usage: /heal <target>
-    permission: basics.command.heal
-    description: Heals self or target
+    usage: "/heal <target>"
+    permission: "basics.command.heal"
+    description: "Heals self or target"
     permission-message: '&cYou lack the permissions to use this command'
   feed:
-    usage: /feed <target>
+    usage: "/feed <target>"
     permission: basics.command.feed
     description: Feeds self or target
     permission-message: '&cYou lack the permissions to use this command'
