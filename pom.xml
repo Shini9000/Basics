@@ -6,7 +6,7 @@
 
     <groupId>me.shini9000</groupId>
     <artifactId>Basics</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>jar</packaging>
 
     <name>Basics</name>

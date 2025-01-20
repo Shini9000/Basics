@@ -2,6 +2,7 @@ package me.shini9000.basics;
 
 import me.shini9000.basics.commands.Heal;
 import me.shini9000.basics.files.Config;
+import me.shini9000.basics.listeners.JoinLeave;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -37,8 +38,10 @@ public final class Basics extends JavaPlugin {
         // Commands config gen, FEED
         Config.getConfig().options().copyDefaults(true);
         Config.save();
+        // Listeners
+        getServer().getPluginManager().registerEvent(new JoinLeave(), this);
 
-        //commands
+        // Commands
         new Heal(this);
 
         getLogger().info("Basics enabled!");
