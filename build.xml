@@ -1,8 +1,10 @@
 <?xml version="1.0" ?>
 <!DOCTYPE xml>
 <project name="Basics" default="Build">
+    <property name="version" value="1.0.3"/>
     <target name="Build">
-        <jar jarfile="F:\Multicraft\data\servers\server5\plugins\${ant.project.name}.jar" basedir="./target/classes/" includes="**/*">
+        <jar jarfile="F:\Multicraft\data\servers\server5\plugins\${ant.project.name}-${version}.jar"
+             basedir="./target/classes/" includes="**/*">
         </jar>
     </target>
 </project>

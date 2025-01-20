@@ -29,11 +29,11 @@ public final class Basics extends JavaPlugin {
         Config.getConfig().addDefault("Error.Command.PlayerNotFound", "&#FF0000This player was not found");
         Config.getConfig().addDefault("Error.Command.PlayerOffline", "&#FF0000This player is currently offline");
         // Commands config gen , HEAL
-        Config.getConfig().addDefault("Commands.Heal.FullHealth.Self", "&#00FF00You already have full health!");
-        Config.getConfig().addDefault("Commands.Heal.FullHealth.Args", "&#FFD700%playerName% &#FFC0CBalready has full health!");
-        Config.getConfig().addDefault("Commands.Heal.Success.Self", "&#FFC0CBYou are now healed!");
-        Config.getConfig().addDefault("Commands.Heal.Success.Args", "&#00FF00You have healed &#FFD700%playerName%&#00FF00!");
-        Config.getConfig().addDefault("Commands.Heal.Alert.Args", "&#00FF00You have been healed by &#FFD700%playerName%&#00FF00!");
+        Config.getConfig().addDefault("Commands.Heal.FullHealth.Self", "&#ffc0cbYou already have full health!");
+        Config.getConfig().addDefault("Commands.Heal.FullHealth.Args", "&#FFD700%playerName% &#ffc0cbalready has full health!");
+        Config.getConfig().addDefault("Commands.Heal.Success.Self", "&#70ff70You are now healed!");
+        Config.getConfig().addDefault("Commands.Heal.Success.Args", "&#70ff70You have healed &#FFD700%playerName%&#70ff70!");
+        Config.getConfig().addDefault("Commands.Heal.Alert.Args", "&#70ff70You have been healed by &#FFD700%playerName%&#70ff70!");
         // Commands config gen, FEED
         Config.getConfig().options().copyDefaults(true);
         Config.save();
