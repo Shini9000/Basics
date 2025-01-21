@@ -1,5 +1,6 @@
 package me.shini9000.basics.listeners;
 
+import me.shini9000.basics.Basics;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;

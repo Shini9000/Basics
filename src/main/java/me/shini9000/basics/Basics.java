@@ -8,6 +8,8 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
+import java.util.List;
+
 public final class Basics extends JavaPlugin {
     public static Basics THIS;
     private BukkitTask task;
@@ -24,6 +26,8 @@ public final class Basics extends JavaPlugin {
 
         Config.setup();
         // Error for configs
+        Config.getConfig().options().setHeader(List.of("test"));
+        Config.getConfig().addDefault("CONFIG_VERSION", "1.0.5");
         Config.getConfig().addDefault("Error.Command.PlayerOnly", "&#FF0000Only players can execute this command");
         Config.getConfig().addDefault("Error.Command.Permission", "&#FF0000You don't have permission to execute this command");
         Config.getConfig().addDefault("Error.Command.InvalidArgs", "&#FF0000Invalid argument");
@@ -39,7 +43,7 @@ public final class Basics extends JavaPlugin {
         Config.getConfig().options().copyDefaults(true);
         Config.save();
         // Listeners
-        getServer().getPluginManager().registerEvent(new JoinLeave(), this);
+        //getServer().getPluginManager().registerEvent(new JoinLeave(), this);
 
         // Commands
         new Heal(this);
