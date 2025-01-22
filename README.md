@@ -1,4 +1,4 @@
-# Basics - v1.0.5
+# Basics - v1.0.6
 
 Mainly a plugin to allow commands normally used on a server and some useful features hence "basic" stuff.
 

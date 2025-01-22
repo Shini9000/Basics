@@ -1,20 +1,20 @@
 name: Basics
-version: '1.0.4'
+version: '1.0.6'
 main: me.shini9000.basics.Basics
 api-version: '1.21'
-prefix: [ Basics ]
+prefix: Basics${version}
 load: STARTUP
 authors: [ Shini9000 ]
 description: Basic plugin for servers and mandatory needs
 website: https://github.com/Shini9000
 
 commands:
-  fly:
+  flight:
     usage: "/fly <target>"
     permission: basics.command.fly
     description: Toggles flight for self or target
     aliases:
-      - flight
+      - fly
       - tf
     permission-message: '&cYou lack the permissions to use this command'
   heal:
